@@ -1,10 +1,15 @@
-﻿Console.WriteLine(ConvertMinuteToSeconds(3));
+﻿// Create a method called ConvertMinuteToSeconds. This method will take in an int called minutes. This method will convert minutes to seconds. Once converted, return it as an int.
+
+Console.WriteLine(ConvertMinuteToSeconds(3));
 
 static int ConvertMinuteToSeconds(int minutes)
 {
     int seconds = minutes * 60;
     return seconds;
 }
+
+
+// Create a method called ConvertPositive. It should take in an int and return it as a positive int. If the value is positive already or a 0, return it as is. 
 
 Console.WriteLine(ConvertPositive(77));
 Console.WriteLine(ConvertPositive(-57));
@@ -23,6 +28,9 @@ static int ConvertPositive(int value)
     return value;
 }
 
+
+// Create a method called ConvertNegative. It should take in an int and return it as a negative int. If the value is negative already or a 0, return it as is. 
+
 static int ConvertNegative(int value)
 {
     if (value > 0)
@@ -32,6 +40,9 @@ static int ConvertNegative(int value)
     return value;
 }
 
+
+// Create a method called AreaTriangle. This method will take in a double called height and a double called length. Return the area as a double.
+
 Console.WriteLine(AreaTriangle(4,4));
 
 static double AreaTriangle(double height, double length)
@@ -39,6 +50,9 @@ static double AreaTriangle(double height, double length)
     double area = height * length * 0.5;
     return area;
 }
+
+
+// Create a method called IsEnoughMoney. This method will take in 2 doubles, cost and payment. If the payment is equal or greater than the cost, return true. Otherwise return false.
 
 Console.WriteLine(IsEnoughMoney(99,99));
 Console.WriteLine(IsEnoughMoney(7,3));
@@ -48,6 +62,9 @@ static bool IsEnoughMoney(double cost, double payment)
 {
     return payment >= cost;
 }
+
+
+// Create a method called GetSalary. This method will take in a string called job. It will return that job’s salary as a double.
 
 Console.WriteLine(GetSalary("Janitor"));
 Console.WriteLine(GetSalary("CEO"));
@@ -85,6 +102,9 @@ static double GetSalary(string job)
             return 0;
     }
 }
+
+
+// Create a method called CombineWords. This will take in 3 separate strings. This will return the 3 strings as 1 string seperated by a ,
 
 Console.WriteLine(CombineWords("Apple", "Orange", "Banana"));
 
